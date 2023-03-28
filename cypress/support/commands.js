@@ -23,6 +23,8 @@ Cypress.Commands.add("openDropdownPage", () => {
 
 Cypress.Commands.add("login", () => {
   cy.openLoginPage();
+  loginpage.userNameInput().should("be.visible");
+  loginpage.passwordInput().should("be.visible");
   loginpage.userNameInput().type(Cypress.env("USER_NAME"));
   loginpage.passwordInput().type(Cypress.env("PASSWORD"));
   loginpage.loginButton().click();

@@ -15,6 +15,10 @@ class LoginPage {
     flashAlert(){
         return cy.get("#flash")
     }
+
+    pageTitle(){
+        return cy.get("h2");
+    }
 }
 
 export default LoginPage;

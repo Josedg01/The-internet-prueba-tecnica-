@@ -4,10 +4,17 @@ class InputsPage {
         return cy.get("input")
     }
 
+    pageTitle(){
+        return cy.get("h3");
+    }
+
 
 }
 
-
+const RandExp = require('randexp');
+const rgx = /([e]{1})/
+const random = new RandExp(rgx).gen();
+console.log(random);
 
 export default InputsPage;
 
