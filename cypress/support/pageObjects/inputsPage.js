@@ -12,7 +12,7 @@ class InputsPage {
 }
 
 const RandExp = require('randexp');
-const rgx = /([e]{1})/
+const rgx = /([-]?[1-9][e][+][1-9])/
 const random = new RandExp(rgx).gen();
 console.log(random);
 

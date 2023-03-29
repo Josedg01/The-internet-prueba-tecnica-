@@ -7,8 +7,9 @@ const negativeNumber = Math.floor(Math.random() * -10000000000000000000);
 const RandExp = require('randexp');
 const rgx = /([^eA-Z0-9]{1})/
 const randomLetter = new RandExp(rgx).gen();
-const rgx1 = /([e])/
-const letterE = new RandExp(rgx1).gen();
+const rgx1 = /([-]?[1-9][e][+][1-9])/
+const scientificNotation = new RandExp(rgx1).gen();
+
 
 describe("testing the input page", () => {
 
@@ -29,17 +30,36 @@ describe("testing the input page", () => {
         inputspage.inputBox().type(negativeNumber);
     });
 
-    it("inputing letters that are not the letter e", () => {
+    it("should not input letters", () => {
         inputspage.inputBox().click();
         inputspage.inputBox().should("have.focus");
         inputspage.inputBox().type(randomLetter);
+        inputspage.inputBox().should("have.value", "");
     });
 
-    it("inputing the letter 'e' more than once", () => {
+    it("increasing the input using the upArrow key", () => {
         inputspage.inputBox().click();
         inputspage.inputBox().should("have.focus");
-        inputspage.inputBox().type(letterE);
+        inputspage.inputBox().type("{upArrow}");
     });
 
-    // it()
+    it("decreasing the input using the downArrow key", () => {
+        inputspage.inputBox().click();
+        inputspage.inputBox().should("have.focus");
+        inputspage.inputBox().type("{downArrow}");
+    });
+
+     it("chaging from normal number to scientific notation", () =>{
+        inputspage.inputBox().click();
+        inputspage.inputBox().should("have.focus");
+        inputspage.inputBox().type(positiveNumber);
+        inputspage.inputBox().type("{upArrow}");
+     })
+
+     it("chaging from scientific notation to normal number ", () =>{
+        inputspage.inputBox().click();
+        inputspage.inputBox().should("have.focus");
+        inputspage.inputBox().type(scientificNotation);
+        inputspage.inputBox().type("{upArrow}");
+     })
 })
