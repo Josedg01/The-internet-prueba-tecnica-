@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ui-regression-allure": "cypress run --browser chrome --spec cypress/e2e/the-internet/**.js --env allure=true",
+    "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true",
+    "allure:report": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "allure:history": "mv -f allure-report/history allure-results/history && rm -r allure-report || true"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
+    "@shelex/cypress-allure-plugin": "^2.37.0",
     "cypress": "^12.8.1"
   },
   "dependencies": {

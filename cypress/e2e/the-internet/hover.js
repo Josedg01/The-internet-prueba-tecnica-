@@ -11,7 +11,7 @@ describe("testing hovers page", () =>{
     });
 
     it("hover over user 1", () => {
-        hoverspage.firstUser().realHover("mouse");
+        hoverspage.firstImage().trigger("mouseover");
     });
 
 })
