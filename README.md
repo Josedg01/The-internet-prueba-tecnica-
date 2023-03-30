@@ -1,20 +1,24 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# The internet pages
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+Pruebas automatizadas de las siguientes paginas
+https://the-internet.herokuapp.com/login
+https://the-internet.herokuapp.com/inputs
+https://the-internet.herokuapp.com/dropdown
+https://the-internet.herokuapp.com/hovers 
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Tecnologías utilizadas
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+- Cypress
+- JavaScript
+- Mocha
+- Allure
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## Instalación del proyecto
+
+ - Ejecutar el comando `npm install` para instalar todas las dependencias requeridas para el proyecto.
+
+ ## Ejecucion del proyecto 
+
+ - Ejecutar el comando `npm  ui-regression-allure` para la ejecucion de todos los test cases creados.
+
+ - Ejecutar el comando `npm allure:report` para abrir el reporte de allure de todos los casos de pruebas ejecutados.
