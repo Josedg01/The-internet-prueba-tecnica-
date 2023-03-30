@@ -11,11 +11,4 @@ class InputsPage {
 
 }
 
-const RandExp = require('randexp');
-const rgx = /([-]?[1-9][e][+][1-9])/
-const random = new RandExp(rgx).gen();
-console.log(random);
-
 export default InputsPage;
-
-/^[1]?[-\s\.]?(\(\d{3}\)|\d{3})[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/im
