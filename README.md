@@ -6,6 +6,17 @@ Pruebas automatizadas de las siguientes paginas
 - https://the-internet.herokuapp.com/dropdown
 - https://the-internet.herokuapp.com/hovers 
 
+
+Module           |Number of Scenarios  | Status                                                                |
+| ----------------- |------------ |------------------------------------------------------------------ |
+| Smoke test |4 | :white_check_mark: |
+| Login |5 | :white_check_mark: |
+| Inputs |7 | :white_check_mark: |
+| Hovers |3 | :white_check_mark: |
+| Dropdown |2 | :white_check_mark: |
+
+
+
 ## Tecnologías utilizadas
 
 - Cypress

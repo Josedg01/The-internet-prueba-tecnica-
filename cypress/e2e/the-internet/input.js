@@ -18,13 +18,13 @@ describe("testing the input page", () => {
         cy.openInputsPage();
     });
 
-    it("inputing positive number", () => {
+    it("inputting positive number", () => {
         inputspage.inputBox().click();
         inputspage.inputBox().should("have.focus");
         inputspage.inputBox().type(positiveNumber);
     });
 
-    it("inputing negative number", () => {
+    it("inputting negative number", () => {
         inputspage.inputBox().click();
         inputspage.inputBox().should("have.focus");
         inputspage.inputBox().type(negativeNumber);
@@ -49,14 +49,14 @@ describe("testing the input page", () => {
         inputspage.inputBox().type("{downArrow}");
     });
 
-     it("chaging from normal number to scientific notation", () =>{
+     it("changing from normal number to scientific notation", () =>{
         inputspage.inputBox().click();
         inputspage.inputBox().should("have.focus");
         inputspage.inputBox().type(positiveNumber);
         inputspage.inputBox().type("{upArrow}");
      })
 
-     it("chaging from scientific notation to normal number ", () =>{
+     it("changing from scientific notation to normal number ", () =>{
         inputspage.inputBox().click();
         inputspage.inputBox().should("have.focus");
         inputspage.inputBox().type(scientificNotation);
