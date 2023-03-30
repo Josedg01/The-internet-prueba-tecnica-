@@ -1,10 +1,10 @@
 # The internet pages
 
 Pruebas automatizadas de las siguientes paginas
-https://the-internet.herokuapp.com/login
-https://the-internet.herokuapp.com/inputs
-https://the-internet.herokuapp.com/dropdown
-https://the-internet.herokuapp.com/hovers 
+- https://the-internet.herokuapp.com/login
+- https://the-internet.herokuapp.com/inputs
+- https://the-internet.herokuapp.com/dropdown
+- https://the-internet.herokuapp.com/hovers 
 
 ## Tecnologías utilizadas
 
