@@ -5,10 +5,10 @@ const inputspage = new InputsPage;
 const positiveNumber = Math.floor(Math.random() * 10000000000000000000);
 const negativeNumber = Math.floor(Math.random() * -10000000000000000000);
 const RandExp = require('randexp');
-const rgx = /([^eA-Z0-9]{1})/
-const randomLetter = new RandExp(rgx).gen();
-const rgx1 = /([-]?[1-9][e][+][1-9])/
-const scientificNotation = new RandExp(rgx1).gen();
+const rgxLetters = /([^A-Z0-9]{1})/
+const randomLetter = new RandExp(rgxLetters).gen();
+const rgxScientificNotation = /([-]?[1-9][e][+][1-9])/
+const scientificNotation = new RandExp(rgxScientificNotation).gen();
 
 
 describe("testing the input page", () => {

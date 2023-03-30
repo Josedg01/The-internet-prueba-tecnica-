@@ -1,17 +1,13 @@
 import LoginPage from "../../support/pageObjects/loginPage";
-import { randEmail, randAbbreviation } from "@ngneat/falso";
+import {randAbbreviation, randUserName } from "@ngneat/falso";
 
 
 const loginpage = new LoginPage();
 
-const fakeUser = randEmail();
+const fakeUser = randUserName();
 const fakePassword = randAbbreviation();
-const RandExp = require('randexp');
-const rgx = /([A-Z]{2})([a-z]{5})(\d{6})[^a-zA-Z0-9]/
-const random = new RandExp(rgx).gen();
 
-
-describe("negative login", () => {
+describe("Testing login page", () => {
 
     beforeEach(function(){
 
@@ -44,7 +40,7 @@ describe("negative login", () => {
     });
 
     it("Login with invalid username", () => {
-        loginpage.userNameInput().type(random);
+        loginpage.userNameInput().type(fakeUser);
         loginpage.loginButton().click();
         loginpage.flashAlert().should("be.visible");
         loginpage.flashAlert().should("contains.text", "Your username is invalid!");
@@ -52,7 +48,7 @@ describe("negative login", () => {
 
     it("Login with invalid password", () => {
         loginpage.userNameInput().type(Cypress.env("USER_NAME"));
-        loginpage.passwordInput().type(random);
+        loginpage.passwordInput().type(fakePassword);
         loginpage.loginButton().click();
         loginpage.flashAlert().should("be.visible");
         loginpage.flashAlert().should("contains.text", "Your password is invalid!");
