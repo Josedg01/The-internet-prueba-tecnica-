@@ -26,10 +26,14 @@ Module           |Number of Scenarios  | Status                                 
 
 ## Instalación del proyecto
 
- - Ejecutar el comando `npm install` para instalar todas las dependencias requeridas para el proyecto.
+ - Descargar e instalar [node.js] (https://nodejs.org/en)
+
+ - Descargar [Allure] (https://github.com/allure-framework/allure2/releases) y agregar como una variable de entorno el path ***"[allure path]/bin"*** 
+
+ - Ejecutar el comando `npm run install` en la terminal del proyecto para instalar todas las dependencias requeridas.
 
  ## Ejecucion del proyecto 
 
- - Ejecutar el comando `npm  ui-regression-allure` para la ejecucion de todos los test cases creados.
+ - Ejecutar el comando `npm run ui-regression-allure` para la ejecucion de todos los test cases creados.
 
- - Ejecutar el comando `npm allure:report` para abrir el reporte de allure de todos los casos de pruebas ejecutados.
+ - Ejecutar el comando `npm run allure:report` para abrir el reporte de allure de todos los casos de pruebas ejecutados.
