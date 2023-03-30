@@ -1,6 +1,6 @@
 # The internet pages
 
-Pruebas automatizadas de las siguientes paginas
+Pruebas automatizadas de las siguientes páginas
 - https://the-internet.herokuapp.com/login
 - https://the-internet.herokuapp.com/inputs
 - https://the-internet.herokuapp.com/dropdown
@@ -32,7 +32,7 @@ Module           |Number of Scenarios  | Status                                 
 
  - Ejecutar el comando `npm run install` en la terminal del proyecto para instalar todas las dependencias requeridas.
 
- ## Ejecucion del proyecto 
+ ## Ejecución del proyecto 
 
  - Ejecutar el comando `npm run ui-regression-allure` para la ejecucion de todos los test cases creados.
 
