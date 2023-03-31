@@ -50,3 +50,5 @@ Module           |Number of Scenarios  | Status                                 
  - Ejecutar el comando `npm run ui-regression-allure` para la ejecucion de todos los test cases creados.
 
  - Ejecutar el comando `npm run allure:report` para abrir el reporte de allure de todos los casos de pruebas ejecutados.
+
+ - Ejecutar comando `npx cypress open` para abrir cypress en el browser.
