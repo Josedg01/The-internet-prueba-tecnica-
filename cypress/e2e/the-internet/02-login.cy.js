@@ -1,11 +1,11 @@
 import LoginPage from "../../support/pageObjects/loginPage";
-import {randAbbreviation, randUserName } from "@ngneat/falso";
+import {randPassword, randUserName } from "@ngneat/falso";
 
 
 const loginpage = new LoginPage();
 
 const fakeUser = randUserName();
-const fakePassword = randAbbreviation();
+const fakePassword = randPassword();
 
 describe("Testing login page", () => {
 
