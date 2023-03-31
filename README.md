@@ -27,15 +27,15 @@ Module           |Number of Scenarios  | Status                                 
  ## Configuración del proyecto
  En el archivo **cypress.env.json** se pueden modificar la propiedades:
 
-     "loginUrl": <URL de la pagina del login>,
-     "USER_NAME": <Usuario con el que se hara el login conrrecto>,
-     "PASSWORD": <Contraseña con la que se hara el login correcto>,
-     "inputsUrl": <URL de la pagina de inputs>,
-     "hoversUrl": <URL de la pagina de hovers>,
-     "dropdownUrl": <URL de la pagina del dropdown>,
-     "viewport": <Dimension del viewport>
+     "loginUrl": <URL de la página del login>,
+     "USER_NAME": <Usuario con el que se hará el login correcto>,
+     "PASSWORD": <Contraseña con la que se hará el login correcto>,
+     "inputsUrl": <URL de la página de inputs>,
+     "hoversUrl": <URL de la página de hovers>,
+     "dropdownUrl": <URL de la página del dropdown>,
+     "viewport": <Dimensión del viewport>
 
- ***Nota**: El valor de la propiedad `viewport` debe de ser alguno de los presets establecidos en Cypress, los valores numericos del ancho y el alto contenidos en un array en el orden mencionado o los valores del ancho y el alto contenidos en un objeto en el orden mencionado. De lo contrario el viewport tomara el valor por default.*
+ ***Nota**: El valor de la propiedad `viewport` debe de ser alguno de los presets establecidos en Cypress, los valores numéricos del ancho y el alto contenidos en un array en el orden mencionado o los valores del ancho y el alto contenidos en un objeto en el orden mencionado. De lo contrario el viewport tomara el valor por default.*
 
 ## Instalación del proyecto
 
