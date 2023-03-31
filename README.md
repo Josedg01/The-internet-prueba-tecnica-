@@ -43,7 +43,7 @@ Module           |Number of Scenarios  | Status                                 
 
  - Descargar [Allure] (https://github.com/allure-framework/allure2/releases) y agregar como una variable de entorno el path ***"[allure path]/bin"*** 
 
- - Ejecutar el comando `npm run install` en la terminal del proyecto para instalar todas las dependencias requeridas.
+ - Ejecutar el comando `npm install` en la terminal del proyecto para instalar todas las dependencias requeridas.
 
  ## Ejecución del proyecto 
 
