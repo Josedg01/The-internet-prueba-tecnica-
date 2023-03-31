@@ -13,13 +13,14 @@ describe("Testing login page", () => {
 
         switch(Cypress.currentTest.title) {
             case "Haciendo login":
+                cy.changeViewport(Cypress.env("viewport"));
                 break;
-                
             case "Haciendo logout":
+                cy.changeViewport(Cypress.env("viewport"));
                 break;
-
             default:
-                 cy.openLoginPage();
+                cy.openLoginPage();
+                cy.changeViewport(Cypress.env("viewport"));
                 break;
         }
     });

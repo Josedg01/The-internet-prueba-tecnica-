@@ -11,6 +11,9 @@ const dropdownPage = new DropdownPage;
 
 describe("Smoke tests", () => {
 
+    beforeEach(function(){
+        cy.changeViewport(Cypress.env("viewport"));
+    });
 
     it("Validating in loginPage", () =>{
 
@@ -48,8 +51,4 @@ describe("Smoke tests", () => {
     });
 
    
-
-
-
-
 })

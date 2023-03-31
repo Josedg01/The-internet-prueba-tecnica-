@@ -7,7 +7,7 @@ describe("testing hovers page", () =>{
 
     beforeEach(function() {
         cy.openHoversPage();
-
+        cy.changeViewport(Cypress.env("viewport"));
     });
 
     it("hover over user 1", () => {
