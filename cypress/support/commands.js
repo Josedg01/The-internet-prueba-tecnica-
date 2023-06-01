@@ -39,7 +39,7 @@ Cypress.Commands.add("logout", () => {
     loginpage.flashAlert().should("contains.text", "You logged out of the secure area!")
 });
 
-//Method used to change the viewport of the screen
+//This method is used to change the viewport of the screen
 Cypress.Commands.add("changeViewport", (preset) => {
 
   if(Array.isArray(preset) === true){
