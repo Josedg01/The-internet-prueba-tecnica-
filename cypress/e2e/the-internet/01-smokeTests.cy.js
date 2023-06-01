@@ -9,6 +9,8 @@ const inputsPage  = new InputsPage();
 const hoversPage = new HoversPage();
 const dropdownPage = new DropdownPage;
 
+
+//Pruebas de humo
 describe("Smoke tests", () => {
 
     beforeEach(function(){
