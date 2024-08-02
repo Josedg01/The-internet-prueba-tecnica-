@@ -37,7 +37,8 @@ Module           |Number of Scenarios  | Status                                 
 
  ***Nota**: El valor de la propiedad `viewport` debe de ser alguno de los presets establecidos en Cypress, los valores numéricos del ancho y el alto contenidos en un array en el orden mencionado o los valores del ancho y el alto contenidos en un objeto en el orden mencionado. De lo contrario el viewport tomara el valor por default.*
 
-**Ejemplo**:
+**Ejemplo configuracion del viewport**:
+
     "viewport": "ipad-2"
     "viewport": [768, 1024]
     "viewport": {"whidth": 768, "height": 1024}
