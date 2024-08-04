@@ -19,8 +19,8 @@ describe("Testing login page", () => {
                 cy.changeViewport(Cypress.env("viewport"));
                 break;
             default:
-                cy.openLoginPage();
                 cy.changeViewport(Cypress.env("viewport"));
+                cy.openLoginPage();
                 break;
         }
     });

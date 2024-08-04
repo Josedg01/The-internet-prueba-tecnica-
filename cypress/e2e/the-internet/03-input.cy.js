@@ -15,8 +15,8 @@ describe("testing the input page", () => {
 
 
     beforeEach(function(){
-        cy.openInputsPage();
         cy.changeViewport(Cypress.env("viewport"));
+        cy.openInputsPage();
         
     });
 

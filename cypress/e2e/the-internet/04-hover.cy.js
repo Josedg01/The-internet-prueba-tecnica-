@@ -6,8 +6,8 @@ const hoverspage = new HoversPage;
 describe("testing hovers page", () =>{
 
     beforeEach(function() {
-        cy.openHoversPage();
         cy.changeViewport(Cypress.env("viewport"));
+        cy.openHoversPage();
     });
 
     it("hover over user 1", () => {

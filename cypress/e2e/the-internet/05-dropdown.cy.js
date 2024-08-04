@@ -7,9 +7,8 @@ describe("Testing dropdown page", () =>{
 
 
     beforeEach(function(){
-        cy.openDropdownPage();
         cy.changeViewport(Cypress.env("viewport"));
-       
+        cy.openDropdownPage();
     });
 
     it("Selecting first value", ()=> {
