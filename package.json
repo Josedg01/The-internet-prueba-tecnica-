@@ -15,7 +15,7 @@
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
     "@shelex/cypress-allure-plugin": "^2.37.0",
-    "cypress": "^12.16.0",
+    "cypress": "^12.17.4",
     "cypress-real-events": "^1.7.6"
   },
   "dependencies": {
